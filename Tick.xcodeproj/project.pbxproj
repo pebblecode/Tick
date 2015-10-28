@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71D3C9661BE1269C006EACCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3C9651BE1269C006EACCB /* AppDelegate.swift */; };
+		71D3C9681BE1269C006EACCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3C9671BE1269C006EACCB /* ViewController.swift */; };
+		71D3C96B1BE1269C006EACCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3C9691BE1269C006EACCB /* Main.storyboard */; };
+		71D3C96D1BE1269C006EACCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D3C96C1BE1269C006EACCB /* Assets.xcassets */; };
+		71D3C9701BE1269C006EACCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3C96E1BE1269C006EACCB /* LaunchScreen.storyboard */; };
+		71D3C97B1BE1269C006EACCB /* TickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3C97A1BE1269C006EACCB /* TickTests.swift */; };
+		71D3C9801BE1269C006EACCB /* Tick WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 71D3C97F1BE1269C006EACCB /* Tick WatchKit App.app */; };
+		71D3C9861BE1269C006EACCB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3C9841BE1269C006EACCB /* Interface.storyboard */; };
+		71D3C9881BE1269C006EACCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D3C9871BE1269C006EACCB /* Assets.xcassets */; };
+		71D3C98F1BE1269C006EACCB /* Tick WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 71D3C98E1BE1269C006EACCB /* Tick WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		71D3C9941BE1269C006EACCB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3C9931BE1269C006EACCB /* InterfaceController.swift */; };
+		71D3C9961BE1269C006EACCB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3C9951BE1269C006EACCB /* ExtensionDelegate.swift */; };
+		71D3C9981BE1269C006EACCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D3C9971BE1269C006EACCB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71D3C9771BE1269C006EACCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D3C95A1BE1269C006EACCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D3C9611BE1269C006EACCB;
+			remoteInfo = Tick;
+		};
+		71D3C9811BE1269C006EACCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D3C95A1BE1269C006EACCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D3C97E1BE1269C006EACCB;
+			remoteInfo = "Tick WatchKit App";
+		};
+		71D3C9901BE1269C006EACCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71D3C95A1BE1269C006EACCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D3C98D1BE1269C006EACCB;
+			remoteInfo = "Tick WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71D3C99F1BE1269C006EACCB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				71D3C98F1BE1269C006EACCB /* Tick WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C9A31BE1269C006EACCB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				71D3C9801BE1269C006EACCB /* Tick WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		71D3C9621BE1269C006EACCB /* Tick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D3C9651BE1269C006EACCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71D3C9671BE1269C006EACCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71D3C96A1BE1269C006EACCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71D3C96C1BE1269C006EACCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D3C96F1BE1269C006EACCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71D3C9711BE1269C006EACCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D3C9761BE1269C006EACCB /* TickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D3C97A1BE1269C006EACCB /* TickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTests.swift; sourceTree = "<group>"; };
+		71D3C97C1BE1269C006EACCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D3C97F1BE1269C006EACCB /* Tick WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D3C9851BE1269C006EACCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		71D3C9871BE1269C006EACCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D3C9891BE1269C006EACCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D3C98E1BE1269C006EACCB /* Tick WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tick WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D3C9931BE1269C006EACCB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		71D3C9951BE1269C006EACCB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		71D3C9971BE1269C006EACCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D3C9991BE1269C006EACCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71D3C95F1BE1269C006EACCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C9731BE1269C006EACCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C98B1BE1269C006EACCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71D3C9591BE1269C006EACCB = {
+			isa = PBXGroup;
+			children = (
+				71D3C9641BE1269C006EACCB /* Tick */,
+				71D3C9791BE1269C006EACCB /* TickTests */,
+				71D3C9831BE1269C006EACCB /* Tick WatchKit App */,
+				71D3C9921BE1269C006EACCB /* Tick WatchKit Extension */,
+				71D3C9631BE1269C006EACCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71D3C9631BE1269C006EACCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71D3C9621BE1269C006EACCB /* Tick.app */,
+				71D3C9761BE1269C006EACCB /* TickTests.xctest */,
+				71D3C97F1BE1269C006EACCB /* Tick WatchKit App.app */,
+				71D3C98E1BE1269C006EACCB /* Tick WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71D3C9641BE1269C006EACCB /* Tick */ = {
+			isa = PBXGroup;
+			children = (
+				71D3C9651BE1269C006EACCB /* AppDelegate.swift */,
+				71D3C9671BE1269C006EACCB /* ViewController.swift */,
+				71D3C9691BE1269C006EACCB /* Main.storyboard */,
+				71D3C96C1BE1269C006EACCB /* Assets.xcassets */,
+				71D3C96E1BE1269C006EACCB /* LaunchScreen.storyboard */,
+				71D3C9711BE1269C006EACCB /* Info.plist */,
+			);
+			path = Tick;
+			sourceTree = "<group>";
+		};
+		71D3C9791BE1269C006EACCB /* TickTests */ = {
+			isa = PBXGroup;
+			children = (
+				71D3C97A1BE1269C006EACCB /* TickTests.swift */,
+				71D3C97C1BE1269C006EACCB /* Info.plist */,
+			);
+			path = TickTests;
+			sourceTree = "<group>";
+		};
+		71D3C9831BE1269C006EACCB /* Tick WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				71D3C9841BE1269C006EACCB /* Interface.storyboard */,
+				71D3C9871BE1269C006EACCB /* Assets.xcassets */,
+				71D3C9891BE1269C006EACCB /* Info.plist */,
+			);
+			path = "Tick WatchKit App";
+			sourceTree = "<group>";
+		};
+		71D3C9921BE1269C006EACCB /* Tick WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				71D3C9931BE1269C006EACCB /* InterfaceController.swift */,
+				71D3C9951BE1269C006EACCB /* ExtensionDelegate.swift */,
+				71D3C9971BE1269C006EACCB /* Assets.xcassets */,
+				71D3C9991BE1269C006EACCB /* Info.plist */,
+			);
+			path = "Tick WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71D3C9611BE1269C006EACCB /* Tick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D3C9A41BE1269C006EACCB /* Build configuration list for PBXNativeTarget "Tick" */;
+			buildPhases = (
+				71D3C95E1BE1269C006EACCB /* Sources */,
+				71D3C95F1BE1269C006EACCB /* Frameworks */,
+				71D3C9601BE1269C006EACCB /* Resources */,
+				71D3C9A31BE1269C006EACCB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D3C9821BE1269C006EACCB /* PBXTargetDependency */,
+			);
+			name = Tick;
+			productName = Tick;
+			productReference = 71D3C9621BE1269C006EACCB /* Tick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D3C9751BE1269C006EACCB /* TickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D3C9A71BE1269C006EACCB /* Build configuration list for PBXNativeTarget "TickTests" */;
+			buildPhases = (
+				71D3C9721BE1269C006EACCB /* Sources */,
+				71D3C9731BE1269C006EACCB /* Frameworks */,
+				71D3C9741BE1269C006EACCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D3C9781BE1269C006EACCB /* PBXTargetDependency */,
+			);
+			name = TickTests;
+			productName = TickTests;
+			productReference = 71D3C9761BE1269C006EACCB /* TickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71D3C97E1BE1269C006EACCB /* Tick WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D3C9A01BE1269C006EACCB /* Build configuration list for PBXNativeTarget "Tick WatchKit App" */;
+			buildPhases = (
+				71D3C97D1BE1269C006EACCB /* Resources */,
+				71D3C99F1BE1269C006EACCB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D3C9911BE1269C006EACCB /* PBXTargetDependency */,
+			);
+			name = "Tick WatchKit App";
+			productName = "Tick WatchKit App";
+			productReference = 71D3C97F1BE1269C006EACCB /* Tick WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		71D3C98D1BE1269C006EACCB /* Tick WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D3C99C1BE1269C006EACCB /* Build configuration list for PBXNativeTarget "Tick WatchKit Extension" */;
+			buildPhases = (
+				71D3C98A1BE1269C006EACCB /* Sources */,
+				71D3C98B1BE1269C006EACCB /* Frameworks */,
+				71D3C98C1BE1269C006EACCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tick WatchKit Extension";
+			productName = "Tick WatchKit Extension";
+			productReference = 71D3C98E1BE1269C006EACCB /* Tick WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71D3C95A1BE1269C006EACCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "pebble{code}";
+				TargetAttributes = {
+					71D3C9611BE1269C006EACCB = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2PNNL77FWN;
+					};
+					71D3C9751BE1269C006EACCB = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2PNNL77FWN;
+						TestTargetID = 71D3C9611BE1269C006EACCB;
+					};
+					71D3C97E1BE1269C006EACCB = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2PNNL77FWN;
+					};
+					71D3C98D1BE1269C006EACCB = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2PNNL77FWN;
+					};
+				};
+			};
+			buildConfigurationList = 71D3C95D1BE1269C006EACCB /* Build configuration list for PBXProject "Tick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71D3C9591BE1269C006EACCB;
+			productRefGroup = 71D3C9631BE1269C006EACCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71D3C9611BE1269C006EACCB /* Tick */,
+				71D3C9751BE1269C006EACCB /* TickTests */,
+				71D3C97E1BE1269C006EACCB /* Tick WatchKit App */,
+				71D3C98D1BE1269C006EACCB /* Tick WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71D3C9601BE1269C006EACCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3C9701BE1269C006EACCB /* LaunchScreen.storyboard in Resources */,
+				71D3C96D1BE1269C006EACCB /* Assets.xcassets in Resources */,
+				71D3C96B1BE1269C006EACCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C9741BE1269C006EACCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C97D1BE1269C006EACCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3C9881BE1269C006EACCB /* Assets.xcassets in Resources */,
+				71D3C9861BE1269C006EACCB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C98C1BE1269C006EACCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3C9981BE1269C006EACCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71D3C95E1BE1269C006EACCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3C9681BE1269C006EACCB /* ViewController.swift in Sources */,
+				71D3C9661BE1269C006EACCB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C9721BE1269C006EACCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3C97B1BE1269C006EACCB /* TickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D3C98A1BE1269C006EACCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D3C9961BE1269C006EACCB /* ExtensionDelegate.swift in Sources */,
+				71D3C9941BE1269C006EACCB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71D3C9781BE1269C006EACCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D3C9611BE1269C006EACCB /* Tick */;
+			targetProxy = 71D3C9771BE1269C006EACCB /* PBXContainerItemProxy */;
+		};
+		71D3C9821BE1269C006EACCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D3C97E1BE1269C006EACCB /* Tick WatchKit App */;
+			targetProxy = 71D3C9811BE1269C006EACCB /* PBXContainerItemProxy */;
+		};
+		71D3C9911BE1269C006EACCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D3C98D1BE1269C006EACCB /* Tick WatchKit Extension */;
+			targetProxy = 71D3C9901BE1269C006EACCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71D3C9691BE1269C006EACCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D3C96A1BE1269C006EACCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71D3C96E1BE1269C006EACCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D3C96F1BE1269C006EACCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		71D3C9841BE1269C006EACCB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D3C9851BE1269C006EACCB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71D3C99A1BE1269C006EACCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D3C99B1BE1269C006EACCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71D3C99D1BE1269C006EACCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tick WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.Tick.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		71D3C99E1BE1269C006EACCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tick WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.Tick.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		71D3C9A11BE1269C006EACCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tick_WatchKit_Extension;
+				INFOPLIST_FILE = "Tick WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.Tick.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		71D3C9A21BE1269C006EACCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tick_WatchKit_Extension;
+				INFOPLIST_FILE = "Tick WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.Tick.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		71D3C9A51BE1269C006EACCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.Tick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71D3C9A61BE1269C006EACCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.Tick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71D3C9A81BE1269C006EACCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.TickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tick.app/Tick";
+			};
+			name = Debug;
+		};
+		71D3C9A91BE1269C006EACCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebblecode.TickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tick.app/Tick";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71D3C95D1BE1269C006EACCB /* Build configuration list for PBXProject "Tick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D3C99A1BE1269C006EACCB /* Debug */,
+				71D3C99B1BE1269C006EACCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D3C99C1BE1269C006EACCB /* Build configuration list for PBXNativeTarget "Tick WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D3C99D1BE1269C006EACCB /* Debug */,
+				71D3C99E1BE1269C006EACCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71D3C9A01BE1269C006EACCB /* Build configuration list for PBXNativeTarget "Tick WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D3C9A11BE1269C006EACCB /* Debug */,
+				71D3C9A21BE1269C006EACCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71D3C9A41BE1269C006EACCB /* Build configuration list for PBXNativeTarget "Tick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D3C9A51BE1269C006EACCB /* Debug */,
+				71D3C9A61BE1269C006EACCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71D3C9A71BE1269C006EACCB /* Build configuration list for PBXNativeTarget "TickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D3C9A81BE1269C006EACCB /* Debug */,
+				71D3C9A91BE1269C006EACCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71D3C95A1BE1269C006EACCB /* Project object */;
+}
