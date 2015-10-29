@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Tick_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.5" heightAdjustment="-1" alignment="left" title="+" id="Wdx-9r-3Aq">
+                            <color key="backgroundColor" red="0.39747422079483974" green="0.98039215686274506" blue="0.3362152773632715" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="102"/>
+                            <connections>
+                                <action selector="plusButtonTapped" destination="AgC-eL-Hgc" id="za7-vp-S45"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.5" heightAdjustment="-1" alignment="left" title="-" id="xTi-hG-HRY">
+                            <color key="backgroundColor" red="0.18085323708371681" green="0.027690875448996885" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="102"/>
+                            <connections>
+                                <action selector="minusButtonClicked" destination="AgC-eL-Hgc" id="XOq-Vv-9kc"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="305" y="415"/>
         </scene>
     </scenes>
 </document>

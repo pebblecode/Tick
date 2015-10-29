@@ -8,10 +8,13 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
 
-class InterfaceController: WKInterfaceController {
-
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
+    
+    // MARK: WKInterfaceController
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -26,6 +29,23 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    func inSession(action: (WCSession -> Any)){
+        if WCSession.isSupported(){
+            let session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+            action(session)
+        }
+    }
+    
+    // MARK: Actions
+    @IBAction func plusButtonTapped() {
+        let userInfo = ["PlusTapped" : "Once"]
+        inSession { (session: WCSession) in session.transferUserInfo(userInfo)}
+    }
+    @IBAction func minusButtonTapped() {
     }
 
 }
