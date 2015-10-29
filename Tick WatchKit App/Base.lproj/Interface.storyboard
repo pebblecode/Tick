@@ -21,7 +21,7 @@
                             <color key="backgroundColor" red="0.18085323708371681" green="0.027690875448996885" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="102"/>
                             <connections>
-                                <action selector="minusButtonClicked" destination="AgC-eL-Hgc" id="XOq-Vv-9kc"/>
+                                <action selector="minusButtonTapped" destination="AgC-eL-Hgc" id="hoR-7t-MlS"/>
                             </connections>
                         </button>
                     </items>

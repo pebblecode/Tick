@@ -34,16 +34,20 @@ class ViewController: UIViewController, WCSessionDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func onUIThread(action execute: dispatch_block_t){
+        dispatch_async(dispatch_get_main_queue(), execute)
+    }
+    
     // MARK: WCSessionDelegate
     func session(_session: WCSession, didReceiveUserInfo userInfo: [String: AnyObject]){
         debugPrint("Session data received", userInfo)
         if userInfo.keys.contains("PlusTapped") {
             plus++
-            dispatch_async(dispatch_get_main_queue(), { self.plusLabel.text = String(self.plus)})
+            onUIThread { self.plusLabel.text = String(self.plus)}
         }
         if userInfo.keys.contains("MinusTapped") {
             minus++
-            minusLabel.text = String(minus)
+            onUIThread { self.minusLabel.text = String(self.minus)}
         }
     }
 }

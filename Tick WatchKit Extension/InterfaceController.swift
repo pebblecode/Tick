@@ -43,9 +43,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     // MARK: Actions
     @IBAction func plusButtonTapped() {
         let userInfo = ["PlusTapped" : "Once"]
-        inSession { (session: WCSession) in session.transferUserInfo(userInfo)}
+        inSession { $0.transferUserInfo(userInfo) }
     }
+
     @IBAction func minusButtonTapped() {
+        let userInfo = ["MinusTapped" : "Once"]
+        inSession { $0.transferUserInfo(userInfo) }
     }
 
 }
