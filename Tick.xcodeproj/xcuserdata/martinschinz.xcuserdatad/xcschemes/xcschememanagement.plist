@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Tick Contracts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Tick WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>716363991BE3D24A00B77BE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>716363A61BE3D29900B77BE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>71D3C9611BE1269C006EACCB</key>
 		<dict>
 			<key>primary</key>

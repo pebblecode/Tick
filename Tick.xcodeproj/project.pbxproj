@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		716363B11BE3D2C000B77BE3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716363B01BE3D2C000B77BE3 /* UserData.swift */; };
+		716363B51BE3E61B00B77BE3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716363B41BE3E61B00B77BE3 /* CoreLocation.framework */; };
+		716363B61BE3E68A00B77BE3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716363B01BE3D2C000B77BE3 /* UserData.swift */; };
 		71D3C9661BE1269C006EACCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3C9651BE1269C006EACCB /* AppDelegate.swift */; };
 		71D3C9681BE1269C006EACCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D3C9671BE1269C006EACCB /* ViewController.swift */; };
 		71D3C96B1BE1269C006EACCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D3C9691BE1269C006EACCB /* Main.storyboard */; };
@@ -47,6 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		716363A51BE3D29900B77BE3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71D3C99F1BE1269C006EACCB /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +84,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		716363A71BE3D29900B77BE3 /* libTick Contracts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTick Contracts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		716363B01BE3D2C000B77BE3 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		716363B41BE3E61B00B77BE3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		71D3C9621BE1269C006EACCB /* Tick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D3C9651BE1269C006EACCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D3C9671BE1269C006EACCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +109,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		716363A41BE3D29900B77BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716363B51BE3E61B00B77BE3 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71D3C95F1BE1269C006EACCB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,13 +141,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		716363A81BE3D29900B77BE3 /* Tick Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				716363B01BE3D2C000B77BE3 /* UserData.swift */,
+			);
+			path = "Tick Contracts";
+			sourceTree = "<group>";
+		};
 		71D3C9591BE1269C006EACCB = {
 			isa = PBXGroup;
 			children = (
+				716363B41BE3E61B00B77BE3 /* CoreLocation.framework */,
 				71D3C9641BE1269C006EACCB /* Tick */,
 				71D3C9791BE1269C006EACCB /* TickTests */,
 				71D3C9831BE1269C006EACCB /* Tick WatchKit App */,
 				71D3C9921BE1269C006EACCB /* Tick WatchKit Extension */,
+				716363A81BE3D29900B77BE3 /* Tick Contracts */,
 				71D3C9631BE1269C006EACCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +169,7 @@
 				71D3C9761BE1269C006EACCB /* TickTests.xctest */,
 				71D3C97F1BE1269C006EACCB /* Tick WatchKit App.app */,
 				71D3C98E1BE1269C006EACCB /* Tick WatchKit Extension.appex */,
+				716363A71BE3D29900B77BE3 /* libTick Contracts.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +220,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		716363A61BE3D29900B77BE3 /* Tick Contracts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716363AD1BE3D29900B77BE3 /* Build configuration list for PBXNativeTarget "Tick Contracts" */;
+			buildPhases = (
+				716363A31BE3D29900B77BE3 /* Sources */,
+				716363A41BE3D29900B77BE3 /* Frameworks */,
+				716363A51BE3D29900B77BE3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tick Contracts";
+			productName = "Tick Contracts";
+			productReference = 716363A71BE3D29900B77BE3 /* libTick Contracts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		71D3C9611BE1269C006EACCB /* Tick */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71D3C9A41BE1269C006EACCB /* Build configuration list for PBXNativeTarget "Tick" */;
@@ -267,6 +318,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "pebble{code}";
 				TargetAttributes = {
+					716363A61BE3D29900B77BE3 = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					71D3C9611BE1269C006EACCB = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = HR8H3UHPPB;
@@ -303,6 +357,7 @@
 				71D3C9751BE1269C006EACCB /* TickTests */,
 				71D3C97E1BE1269C006EACCB /* Tick WatchKit App */,
 				71D3C98D1BE1269C006EACCB /* Tick WatchKit Extension */,
+				716363A61BE3D29900B77BE3 /* Tick Contracts */,
 			);
 		};
 /* End PBXProject section */
@@ -345,6 +400,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		716363A31BE3D29900B77BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716363B11BE3D2C000B77BE3 /* UserData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71D3C95E1BE1269C006EACCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716363B61BE3E68A00B77BE3 /* UserData.swift in Sources */,
 				71D3C9961BE1269C006EACCB /* ExtensionDelegate.swift in Sources */,
 				71D3C9941BE1269C006EACCB /* InterfaceController.swift in Sources */,
 			);
@@ -419,6 +483,33 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		716363AE1BE3D29900B77BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		716363AF1BE3D29900B77BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		71D3C99A1BE1269C006EACCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -619,6 +710,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		716363AD1BE3D29900B77BE3 /* Build configuration list for PBXNativeTarget "Tick Contracts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716363AE1BE3D29900B77BE3 /* Debug */,
+				716363AF1BE3D29900B77BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		71D3C95D1BE1269C006EACCB /* Build configuration list for PBXProject "Tick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

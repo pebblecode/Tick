@@ -41,11 +41,12 @@ class ViewController: UIViewController, WCSessionDelegate {
     // MARK: WCSessionDelegate
     func session(_session: WCSession, didReceiveUserInfo userInfo: [String: AnyObject]){
         debugPrint("Session data received", userInfo)
-        if userInfo.keys.contains("PlusTapped") {
+        
+        
+        if userInfo["Type"] as! String == "PlusTapped" {
             plus++
             onUIThread { self.plusLabel.text = String(self.plus)}
-        }
-        if userInfo.keys.contains("MinusTapped") {
+        } else {
             minus++
             onUIThread { self.minusLabel.text = String(self.minus)}
         }

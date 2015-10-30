@@ -11,7 +11,10 @@ import Foundation
 import WatchConnectivity
 
 
-class InterfaceController: WKInterfaceController, WCSessionDelegate {
+class InterfaceController: WKInterfaceController, WCSessionDelegate, CLLocationManagerDelegate {
+    // MARK: Properties
+    
+    var locationManager: CLLocationManager? = nil
     
     // MARK: WKInterfaceController
     
@@ -19,6 +22,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        self.locationManager = CLLocationManager()
+        self.locationManager?.delegate = self
+        self.locationManager?.requestWhenInUseAuthorization()
+        self.locationManager?.requestLocation()
     }
 
     override func willActivate() {
@@ -31,6 +38,13 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         super.didDeactivate()
     }
     
+    // MARK: CLLocationManagerDelegate
+    func locationManager(_manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) { }
+    
+    func locationManager(_manager: CLLocationManager, didFailWithError error: NSError) { }
+    
+    
+    // MARK: Custom behaviour
     func inSession(action: (WCSession -> Any)){
         if WCSession.isSupported(){
             let session = WCSession.defaultSession()
@@ -40,15 +54,25 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         }
     }
     
+    func getEvent(eventType: String) -> UserData {
+        let timestamp = NSDate()
+        let userData = UserData(["Timestamp": timestamp, "Type": eventType, "Latitude": (locationManager?.location?.coordinate.latitude)!]
+        return userData
+    }
+    
     // MARK: Actions
     @IBAction func plusButtonTapped() {
-        let userInfo = ["PlusTapped" : "Once"]
-        inSession { $0.transferUserInfo(userInfo) }
+        let event = getEvent("PlusTapped")
+        inSession {
+            let transfer = $0.transferUserInfo(event)
+            debugPrint(transfer)
+            return transfer
+        }
     }
 
     @IBAction func minusButtonTapped() {
-        let userInfo = ["MinusTapped" : "Once"]
-        inSession { $0.transferUserInfo(userInfo) }
+        let event = getEvent("MinusTapped")
+        inSession { $0.transferUserInfo(event) }
     }
 
 }
