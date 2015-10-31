@@ -54,9 +54,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate, CLLocationM
         }
     }
     
-    func getEvent(eventType: String) -> UserData {
+    func getEvent(eventType: String) -> [String:AnyObject]{
         let timestamp = NSDate()
-        let userData = UserData(["Timestamp": timestamp, "Type": eventType, "Latitude": (locationManager?.location?.coordinate.latitude)!]
+        let loc = (locationManager?.location)!.copy()
+        let data = NSKeyedArchiver.archivedDataWithRootObject(loc)
+        let userData = ["Timestamp": timestamp, "Type": eventType, "Loc": data]
         return userData
     }
     
